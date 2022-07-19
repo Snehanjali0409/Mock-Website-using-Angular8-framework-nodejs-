@@ -1,0 +1,61 @@
+{"students":[
+
+{"city":"New York",
+"company":"ABC",
+"email":"aaa@bbb.com",
+"firstName":"Snehanjali",
+"pic":"https://images.app.goo.gl/jJzAeypsNHZTXeTx8",
+"id":"1",
+"lastName":"Ravichandran",
+"skill":"Java/Javascript",
+"hobbies":"blogging"},
+
+
+{"city":"California",
+"company":"DEF",
+"email":"aaa@bbb.com",
+"firstName":"George",
+"pic":"",
+"id":"1",
+"lastName":"V",
+"skill":"Java/Javascript",
+"hobbies":"content creator"},
+
+{"city":"Texas",
+"company":"DEF",
+"email":"aaa@bbb.com",
+"firstName":"Kristne",
+"pic":"",
+"id":"1",
+"lastName":"P",
+"skill":"Java/Javascript",
+"hobbies":"content creator"},
+{"city":"California",
+"company":"DEF",
+"email":"aaa@bbb.com",
+"firstName":"Barbie",
+"pic":"",
+"id":"1",
+"lastName":"S",
+"skill":"Java",
+"hobbies":"content creator"},
+{"city":"US",
+"company":"DEF",
+"email":"aaa@bbb.com",
+"firstName":"Joe",
+"pic":"",
+"id":"1",
+"lastName":"B",
+"skill":"CSS",
+"hobbies":"content creator"},
+
+{"city":"Texas","company":"GHI","email":"aaa@bbb.com","firstName":"Victor","pic":"","id":"1","lastName":"G","skill":"HTML","hobbies":"youtuber"},
+
+
+{"city":"New jersey","company":"KLM","email":"aaa@bbb.com","firstName":"Richard","pic":"","id":"1","lastName":"P","skill":"Python","hobbies":"teaching"},
+
+
+{"city":"Ontario","company":"XYZ","email":"aaa@bbb.com","firstName":"Niana","pic":"","id":"1","lastName":"A","skill":".NET","hobbies":"painting"}
+
+
+]}

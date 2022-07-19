@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Prject</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+ <style>
+     .container1 {
+        font-family: 'Sans-serif';
+        background-color:#b7ebed;
+        display: grid;
+        padding-top:15px;
+         padding-left:10px;
+          padding-right:100px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));;
+        grid-column-gap: 1px;
+         grid-row-gap: -50px;
+      }
+		.form-control {
+		    padding-left: 2.375rem;
+		}
+		
+		.form-control {
+		    
+		    text-align: left;
+		    color: #276b6e;
+		}
+		
+		.button{
+			  
+			  color: #276b6e;
+			  cursor: pointer;
+			  width: 90%;
+			  border: none;
+			  padding:5px;
+			  text-align: left;
+			  outline: none;
+			  font-size: 15px;
+			  transition: 4s;
+			  display:"none";
+			    top:-150px; 
+	}
+	
+ .active, .button:hover {
+  background-color: #1b1ba1;
+}
+.button:after {
+ 
+  color: #777;
+  font-weight: bold;
+  float: right;
+  font-size:60px;
+     position:relative;
+    top:-200px;  
+
+}
+.active:after {
+  content: "\2212";
+  width:100%;
+}
+
+
+#narrow {
+   float: left;
+   width:repeat(auto-fit, minmax(400px, 1fr));
+}
+#wide {
+   float: left;
+   width:repeat(auto-fit, minmax(400px, 1fr));
+  
+}
+      
+@media only screen and (min-width : 150px) and (max-width : 780px)
+			{
+				{}
+				.form-control
+				{
+					width: 40%;
+					margin: 0 auto;
+				}
+			
+			}
+	h2{text-align:center;
+	color:"#04023b";}
+	p{text-align:center;
+		color:"#022421";}
+   </style>
+  </head>
+  <body>
+  <h2>My Angular Project</h2>
+  <p> This is a project built by angular framework.It has data which where fetched by json. It has a search engine which allows to search names. 
+  <nav class="navbar">
+  <input class="form-control" type="text" name="firstName" [(ngModel)]="firstName" (ngModelChange)="Search()"
+  placeholder="Search">
+  </nav>
+  
+
+<div class="container" id="parent" *ngFor='let in of counter(6);let i=index' >
+ <button class="button" >
+          <div class="container1" >
+			         <div id="narrow"><h2><span style="text-transform:uppercase;">{{items.students[i].firstName}} {{items.students[i].lastName}}</span></h2>
+					<p>Email:{{items.students[i].email}}</p>
+					 <p>Company:{{items.students[i].company}}</p>
+				     <p>Skill:{{items.students[i].skill}}</p>
+				        <p>Skill:{{items.students[i].hobbies}}</p>
+		  </div>
+	 </div>
+		
+		    </button>	
+		 
+											                       
+ </div> </body>
+</html>     
+      
+      
+      
+
+
+
+
